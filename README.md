@@ -46,3 +46,7 @@ react-router-dom : 6.03.0
     Contains all page components.
 ```
 
+## Aluno
+```
+João Marcos de Freitas Rocha
+```
