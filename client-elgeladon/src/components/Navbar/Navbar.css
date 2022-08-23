@@ -18,10 +18,18 @@
 .Paleta {
   background: none;
   border: none;
+  transform: translateY(-3px);
+  border-radius: 10px;
+  transition: all .5s;
+  padding: 0;
 }
 
 .Paleta__icone {
   cursor: pointer;
+  transform: translateY(3px);
+}
+.Paleta--ativa {
+  background: rgb(46, 101, 54);
 }
 
 .Logo {
@@ -45,6 +53,10 @@
   position: absolute;
   left: -20px;
   top: -15px;
+}
+
+.Paleta--deletar {
+  background: rgba(211, 0, 0);
 }
 
 .Sacola {

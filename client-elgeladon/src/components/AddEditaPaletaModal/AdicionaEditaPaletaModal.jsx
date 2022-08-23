@@ -1,9 +1,9 @@
-import './AdicionarPaletaModal.css';
+import './AdicionaEditaPaletaModal.css';
 import { useState, useEffect } from 'react';
-import Modal from '../Modal/Modal';
+import Modal from 'components/Modal/Modal';
 import { PaletaService } from 'services/PaletaService';
 
-function AdicionaPaletaModal({ closeModal, onCreatePaleta }) {
+function AdicionaEditaPaletaModal({ closeModal, onCreatePaleta }) {
   const form = {
     preco: '',
     sabor: '',
@@ -53,7 +53,7 @@ function AdicionaPaletaModal({ closeModal, onCreatePaleta }) {
   return (
     <Modal closeModal={closeModal}>
       <div className='AdicionaPaletaModal'>
-        <form autocomplete='off'>
+        <form autoComplete='off'>
           <h2> Adicionar ao Cardápio </h2>
           <div>
             <label className='AdicionaPaletaModal__text' htmlFor='preco'>
@@ -121,7 +121,7 @@ function AdicionaPaletaModal({ closeModal, onCreatePaleta }) {
               className=' AdicionaPaletaModal__foto'
               id='foto'
               type='file'
-              accept='image/png, image/gif, image/jpeg'
+              accept='image/png, image/, image/jpeg'
               value={state.foto}
               required
               onChange={(e) => handleChange(e, 'foto')}
@@ -142,4 +142,4 @@ function AdicionaPaletaModal({ closeModal, onCreatePaleta }) {
   );
 }
 
-export default AdicionaPaletaModal;
+export default AdicionaEditaPaletaModal;
